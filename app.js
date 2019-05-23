@@ -13,4 +13,5 @@ app.use('/api', routes);
 
 // App Port
 app.listen(config.get('server.port'));
-console.log('App Listening on ');
+console.log(config.get('app.welcome_message_header'));
+console.log(config.get('app.welcome_message_footer'));

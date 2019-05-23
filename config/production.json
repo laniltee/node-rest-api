@@ -1,5 +1,11 @@
 {
   "server": {
     "port": 8080
+  },
+  "authentication": {
+    "jwt": {
+      "secret": "production_secret",
+      "expiry_time": 10000
+    }
   }
 }

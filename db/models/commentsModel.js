@@ -3501,12 +3501,21 @@ const mockComments = [
     }
 ];
 
+/**
+ *
+ * @returns {Promise<any>}
+ */
 const getComments = () => {
     return new Promise((resolve, reject) => {
         resolve(mockComments)
     })
 };
 
+/**
+ * Returns comments filtered by post id
+ * @param postId
+ * @returns {Promise<any>}
+ */
 const getCommentsByPost = (postId) => {
     const filteredCommentsByPosts = mockComments.filter(comment =>
         comment.postId === postId
